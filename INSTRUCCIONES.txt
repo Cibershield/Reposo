@@ -1,0 +1,132 @@
+═══════════════════════════════════════════════════════════════
+  INSTRUCCIONES - Mantener Windows Activo Durante Sincronizacion
+═══════════════════════════════════════════════════════════════
+
+📋 CONTENIDO DEL PAQUETE:
+────────────────────────────────────────────────────────────────
+1. Mantener-Windows-Activo.ps1 - Script avanzado (API Windows)
+2. Mantener-Windows-Activo-SIMPLE.ps1 - Script simple (compatible)
+3. EJECUTAR-AQUI.bat - Menu para elegir version
+4. EJECUTAR-VERSION-SIMPLE.bat - Ejecuta version simple directamente
+5. INSTRUCCIONES.txt - Este archivo
+
+
+🚀 METODO RECOMENDADO (SI TUVISTE ERRORES):
+────────────────────────────────────────────────────────────────
+1. Haz doble clic en "EJECUTAR-VERSION-SIMPLE.bat"
+2. ¡Listo! El script mantendra Windows activo
+3. Para detener: Presiona Ctrl+C en la ventana del script
+
+Esta version NO requiere permisos de administrador y es mas compatible.
+
+
+💻 METODO CON MENU DE OPCIONES:
+────────────────────────────────────────────────────────────────
+1. Haz clic derecho en "EJECUTAR-AQUI.bat"
+2. Selecciona "Ejecutar como administrador"
+3. Elige entre:
+   - Opcion 1: Version avanzada (usa API de Windows)
+   - Opcion 2: Version simple (mas compatible)
+4. Para detener: Presiona Ctrl+C
+
+
+❓ ¿CUAL VERSION USAR?
+────────────────────────────────────────────────────────────────
+VERSION SIMPLE (Recomendada si tuviste errores):
+✓ Mas compatible
+✓ No requiere permisos de administrador
+✓ Funciona simulando actividad minima del sistema
+✓ Usa la tecla F15 cada minuto (no afecta tu trabajo)
+
+VERSION AVANZADA:
+✓ Usa API nativa de Windows
+✓ Mas eficiente
+✓ Requiere permisos de administrador
+✓ Control directo del modo de energia
+
+
+❓ ¿QUE HACEN ESTOS SCRIPTS?
+────────────────────────────────────────────────────────────────
+✓ Evitan que Windows entre en modo reposo/suspension
+✓ Mantienen el sistema activo para sincronizacion de OneDrive
+✓ Monitorean el estado de OneDrive
+✓ Muestran el tiempo transcurrido
+✓ Se pueden detener facilmente con Ctrl+C
+✓ Version simple: simula actividad con tecla F15 (invisible)
+✓ Version avanzada: usa API de Windows directamente
+
+
+🔧 SOLUCION DE PROBLEMAS:
+────────────────────────────────────────────────────────────────
+
+Problema: Errores de sintaxis o "no se puede convertir el valor"
+Solucion: Usa la VERSION SIMPLE (EJECUTAR-VERSION-SIMPLE.bat)
+
+Problema: "No se puede ejecutar scripts en este sistema"
+Solucion: Los archivos .bat ya evitan este problema automaticamente
+
+Problema: El script no se ejecuta
+Solucion: Usa la version simple que NO requiere permisos de admin
+
+Problema: OneDrive no aparece como detectado
+Solucion: Verifica que OneDrive este en ejecucion. El script 
+          seguira funcionando igual para mantener Windows activo.
+
+
+⚙️ CONFIGURACION ADICIONAL (OPCIONAL):
+────────────────────────────────────────────────────────────────
+Si deseas cambiar permanentemente la configuracion de suspension:
+
+1. Abre Configuracion de Windows (Win + I)
+2. Ve a Sistema > Energia
+3. Expande "Pantalla y suspension"
+4. Configura:
+   - "Apagar la pantalla" → Nunca (mientras sincronizas)
+   - "Poner el equipo en suspension" → Nunca (mientras sincronizas)
+
+⚠️ IMPORTANTE: Recuerda restaurar estas configuraciones despues
+   de completar la sincronizacion para ahorrar energia.
+
+
+📊 VERIFICAR SINCRONIZACION DE ONEDRIVE:
+────────────────────────────────────────────────────────────────
+Para ver el estado de sincronizacion de OneDrive:
+
+1. Busca el icono de OneDrive en la bandeja del sistema 
+   (area de notificaciones, junto al reloj)
+2. Haz clic en el icono
+3. Veras el estado de sincronizacion:
+   - "Sincronizado" = Todo sincronizado
+   - "Sincronizando X archivos" = En proceso
+   - Numero junto al icono = Archivos pendientes
+
+
+💡 CONSEJOS:
+────────────────────────────────────────────────────────────────
+• Manten tu laptop conectada a la corriente
+• Asegurate de tener buena conexion a Internet
+• No cierres OneDrive mientras se sincroniza
+• El script puede ejecutarse el tiempo que necesites
+• Es seguro dejar el script corriendo durante la noche
+• La version simple es completamente segura y compatible
+
+
+📝 NOTAS TECNICAS:
+────────────────────────────────────────────────────────────────
+VERSION SIMPLE:
+• Simula presion de tecla F15 cada 60 segundos
+• F15 es una tecla que no tiene funcion en Windows
+• No interrumpe tu trabajo ni causa efectos visibles
+• Compatible con todas las versiones de Windows
+
+VERSION AVANZADA:
+• Usa SetThreadExecutionState de kernel32.dll
+• Control directo sobre el estado de energia del sistema
+• Requiere permisos elevados para modificar configuracion
+
+
+═══════════════════════════════════════════════════════════════
+¿Necesitas ayuda? Los scripts mostraran informacion en pantalla
+mientras se ejecutan. Si la version avanzada da error, usa la
+VERSION SIMPLE que funciona en todos los casos.
+═══════════════════════════════════════════════════════════════
