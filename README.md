@@ -2,6 +2,25 @@
 
 Scripts de PowerShell para evitar que Windows entre en modo reposo/suspensión durante sincronizaciones largas de OneDrive u otras tareas.
 
+## Instalación
+
+### Opción 1: Descargar ZIP (Recomendado)
+1. Haz clic en el botón verde **"Code"** arriba
+2. Selecciona **"Download ZIP"**
+3. Extrae el archivo ZIP en cualquier carpeta
+4. Ejecuta `EJECUTAR-PRO.bat` o `EJECUTAR-VERSION-SIMPLE.bat`
+
+### Opción 2: Clonar con Git
+```bash
+git clone https://github.com/Cibershield/Reposo.git
+cd Reposo
+```
+
+### Opción 3: Descarga Directa
+- [Descargar última versión (ZIP)](https://github.com/Cibershield/Reposo/archive/refs/heads/main.zip)
+
+---
+
 ## Contenido
 
 | Archivo | Descripción |
