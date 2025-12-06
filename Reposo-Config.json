@@ -1,0 +1,17 @@
+{
+    "TiempoMaximoHoras": 0,
+    "HoraInicio": "",
+    "HoraFin": "",
+    "ApagadoAutoSincronizacion": true,
+    "NotificacionWindows": true,
+    "NotificacionSonido": true,
+    "NotificacionTelegram": false,
+    "TelegramBotToken": "",
+    "TelegramChatId": "",
+    "IntervaloSegundos": 60,
+    "GuardarLog": true,
+    "ArchivoLog": "Reposo-Log.txt",
+    "ModoEnergia": "Normal",
+    "ReducirBrillo": false,
+    "NivelBrilloReducido": 20
+}
